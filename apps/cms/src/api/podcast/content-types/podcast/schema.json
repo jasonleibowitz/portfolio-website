@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "podcasts",
+  "info": {
+    "singularName": "podcast",
+    "pluralName": "podcasts",
+    "displayName": "podcast",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "cover_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "news",
+        "interesting",
+        "science",
+        "history",
+        "engineering & tech",
+        "entertainment"
+      ],
+      "required": true
+    },
+    "personal_rating": {
+      "type": "enumeration",
+      "enum": [
+        "every episode",
+        "pick & choose episodes"
+      ]
+    }
+  }
+}
