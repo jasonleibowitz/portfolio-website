@@ -1,8 +1,12 @@
-# Turborepo starter
+# Leibowitz.me Portfolio Website v2
 
-This is an official pnpm starter turborepo.
+## Introduction
+This is the v2 version of my personal & portfolio website. My original website hasn't been updated since 2014 and still uses jQuery. This new version uses the latest & greatest tech stack: TurboRepo, pnpm, Strapi Headless CMS, Next.js, TailwindCSS, Axios, and more. 
 
-## What's inside?
+## Turborepo
+This is a monorepo using [Turborepo](https://turbo.build/). There are some additional considerations to keep in mind when working in a Turborepo repository. 
+
+### What's inside? 
 
 This turborepo uses [pnpm](https://pnpm.io) as a package manager. It includes the following packages/apps:
 
@@ -10,6 +14,7 @@ This turborepo uses [pnpm](https://pnpm.io) as a package manager. It includes th
 
 - `docs`: a [Next.js](https://nextjs.org/) app
 - `web`: another [Next.js](https://nextjs.org/) app
+- `cms`: A [Strapi](https://strapi.io/) Headless CMS Api app
 - `ui`: a stub React component library shared by both `web` and `docs` applications
 - `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
@@ -29,7 +34,7 @@ This turborepo has some additional tools already setup for you:
 To build all apps and packages, run the following command:
 
 ```
-cd my-turborepo
+cd leibowitz.me
 pnpm run build
 ```
 
@@ -38,7 +43,7 @@ pnpm run build
 To develop all apps and packages, run the following command:
 
 ```
-cd my-turborepo
+cd leibowitz.me
 pnpm run dev
 ```
 
