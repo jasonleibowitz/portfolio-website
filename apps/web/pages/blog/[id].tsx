@@ -42,7 +42,7 @@ export default function BlogPost({ image, htmlString, data }) {
 
 			<div>
 				<Image
-					src={`http:127.0.0.1:1337${image}`}
+					src={`${process.env.NEXT_PUBLIC_CMS_URL}${image}`}
 					alt="blog-post"
 					priority={true}
 					width={600}

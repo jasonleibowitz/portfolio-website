@@ -28,7 +28,7 @@ export default function Blog({ images, result }) {
 							<div key={result.id}>
 								<Link href={`/blog/${result.id}`}>
 									<Image
-										src={`${process.env.NEXT_PUBLIC_CMS_API_URL}${result.attributes.cover_image.data.attributes.url}`}
+										src={`${process.env.NEXT_PUBLIC_CMS_URL}${result.attributes.cover_image.data.attributes.url}`}
 										alt="blog-post"
 										priority={true}
 										width={300}
