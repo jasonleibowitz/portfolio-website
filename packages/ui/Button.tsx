@@ -1,4 +1,7 @@
-import * as React from "react";
+import React from 'react';
+
 export const Button = () => {
-  return <button>Boop</button>;
+  return (
+    <button className="bg-orange-500 hover:bg-blue-700 h-16 w-16">Boopz</button>
+  );
 };
